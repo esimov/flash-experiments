@@ -1,0 +1,103 @@
+/* Credits goes to Inigo Quilez
+ * http://www.iquilezles.org/apps/shadertoy/
+*/
+
+<languageVersion : 1.0;>
+
+kernel Chocolux
+<   namespace : "Simo Endre";
+    vendor : "simoendre.wordpress.com";
+    version : 1;
+    description : "Based on the famous 1k intro Chocolux (http://www.pouet.net/prod.php?which=49796)";
+>
+//loop through function 128 times and end at value defined in next macro
+
+{
+    parameter float time
+    <
+        minValue:     float(0.0);
+        maxValue:     float(10000.0);
+        defaultValue: float(0.0);
+        description:  "adjust time";
+    >;      
+    
+    parameter float2 resolution
+    <
+        minValue:     float2(100.0, 100.0);
+        maxValue:     float2(1024.0, 768.0);
+        defaultValue: float2(800.0, 600.0);
+        description:  "define the screen resolution";
+    >;  
+    
+    input image4 src;
+    output pixel3 dst; 
+    
+    #define repeat(f,l,i) f(); if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             if (++i<l) f(); if (++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f(); if(++i<l) f() if(++i<l) f();\
+             
+             
+    void evaluatePixel()
+    {
+       float3 s1 = float3(0.0,0.0,0.0);
+       float3 s4 = float3(sin(time), cos(time), 0.0);
+       float3 s2 = s4.zxy;
+       float3 s3 = s4.zzx;
+       
+       float t,b,c,h=0.0;
+       float3 m,n;
+       float3 p = float3(0.2);
+       float3 d = normalize(0.001 * dst.rgb - p);
+       
+       //1st iteration
+       t += 1.0;
+       b = dot(d,n=s1-p);
+       c = b*b+0.2-dot(n,n);
+       if (c>0.0) 
+       {
+            m=s1; t=b-c;
+       }
+       
+       //2nd iteration
+       b = dot(d,n=s2-p);
+       c = b*b+0.2-dot(n,n);
+       if (c>0.0) 
+       {
+            m=s2; t=b-c;
+       }
+       
+       //3d iteration
+       b = dot(d,n=s3-p);
+       c = b*b+0.2-dot(n,n);
+       if (c>0.0) 
+       {
+            m=s3; t=b-c;
+       }
+       
+       //4th iteration
+       b = dot(d,n=s4-p);
+       c = b*b+0.2-dot(n,n);
+       if (c>0.0) 
+       {
+            m=s4; t=b-c;
+       }
+       p+=t*d;
+       d=float3(dot(d,n=normalize(p-m)));
+       h+=pow(pow(n.x,2.0),44.0)+pow(n.x,2.0)*0.2;
+       float3 color = float3(h,h*h,h*h*h*h);
+       dst.rgb = float3(color.r, color.g, color.b);
+    }
+}

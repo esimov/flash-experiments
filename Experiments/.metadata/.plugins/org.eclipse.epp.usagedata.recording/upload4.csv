@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1318239324658
+java.vm.specification.version,sysinfo,,,"1.7",1318239324658
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1318239324658
+java.vm.version,sysinfo,,,"21.0-b17",1318239324658
+started,bundle,org.eclipse.debug.ui,3.5.0.v20090603,"org.eclipse.debug.ui",1318239324787
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.1.v20090722-0200-e3x,"org.eclipse.mylyn.monitor.ui",1318239324860
+started,bundle,org.eclipse.team.core,3.5.0.I20090527-0620,"org.eclipse.team.core",1318239325014
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1318239325185
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1318239325186
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1318239325397
+started,bundle,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console",1318239325464
+started,bundle,org.eclipse.team.cvs.ui,3.3.200.I20090521-1750,"org.eclipse.team.cvs.ui",1318239325817
+activated,view,com.powerflasher.fdt.ui,3.5.0.1094,"com.powerflasher.fdt.ui.views.FlashExplorer",1318239329706
+activated,view,com.powerflasher.fdt.ui,3.5.0.1094,"com.powerflasher.fdt.ui.views.FlashExplorer",1318239329758
+closed,view,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.internal.introview",1318239329786
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239341290
+started,bundle,org.eclipse.jdt.core,3.5.0.v_963,"org.eclipse.jdt.core",1318239359129
+started,bundle,org.eclipse.jst.common.project.facet.core,1.4.0.v200906080500,"org.eclipse.jst.common.project.facet.core",1318239359250
+started,bundle,org.eclipse.jpt.core,2.2.0.v200906070220,"org.eclipse.jpt.core",1318239359362
+started,bundle,org.eclipse.jpt.eclipselink.core,1.2.0.v200905310000,"org.eclipse.jpt.eclipselink.core",1318239359482
+started,bundle,org.eclipse.wst.xml.ui,1.1.0.v200905242047,"org.eclipse.wst.xml.ui",1318239359550
+started,bundle,org.eclipse.wst.sse.ui,1.1.100.v200905141750,"org.eclipse.wst.sse.ui",1318239359644
+started,bundle,org.eclipse.wst.sse.core,1.1.400.v200905141750,"org.eclipse.wst.sse.core",1318239359909
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239360040
+started,bundle,org.eclipse.wst.xml.core,1.1.400.v200904300540,"org.eclipse.wst.xml.core",1318239360096

@@ -1,0 +1,158 @@
+/* Credits goes to Inigo Quilez
+ * http://www.iquilezles.org/apps/shadertoy/
+*/
+
+<languageVersion : 1.0;>
+
+kernel Monjori
+<   namespace : "Simo Endre";
+    vendor : "simoendre.wordpress.com";
+    version : 1;
+    description : "Based on FRequency's 1k intro demoscene";
+>
+
+{
+    parameter float time
+    <
+        minValue:     float(0.0);
+        maxValue:     float(10.0);
+        defaultValue: float(0.0);
+        description:  "adjust time";
+    >;      
+    
+    parameter float2 resolution
+    <
+        minValue:     float2(100.0, 100.0);
+        maxValue:     float2(1024.0, 768.0);
+        defaultValue: float2(800.0, 600.0);
+        description:  "define the screen resolution";
+    >;  
+    
+    parameter float3 col
+    <
+        minValue:     float3(0.001, 0.001, 0.001);
+        maxValue:     float3(0.5, 0.5, 0.5);
+        defaultValue: float3(0.0025, 0.025, 0.005);
+        description:  "adjust 1st color";
+    >;
+    
+    
+    input image4 src;
+    output pixel3 dst; 
+    
+    #define repeat(f,l,i) f();if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                        if(i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();if(++i<l)f();\
+                         
+    #define calo(f,s,np) if (f>s) np();
+    #define loop() if (f>s) f*=distance(np,float3(cos(time)+sin(time*0.2),0.3,2.0+cos(time*0.5)*0.5));\
+                    np = o+d*c;\
+                    f*=distance(np,float3(-cos(time*0.7),0.3,2.0+sin(time*0.5)));\
+                    f*=distance(np,float3(-sin(time*0.2)*0.5,sin(time),2.0));\
+                    f*=cos(np.y)*cos(np.x)-0.1-cos(np.z*7.0+time*7.0)*cos(np.x*3.0)*cos(np.y*4.0)*0.1;\
+                    c+=s*4.0;
+    
+    void evaluatePixel()
+    {
+        float2 pos = outCoord() / resolution.xy;
+        if ((pos.x > 1.0)||(pos.y) > 1.0)
+        {
+            dst.rgb = float3(1.0, 1.0, 1.0);
+        }
+        else
+        {
+            float2 p = float2(pos.x*2.0-1.0, -pos.y*2.0+1.0);
+            float3 o = float3(p.x,p.y*1.25-0.3,0.0);
+            float3 d = float3(p.x+cos(time)*0.3,p.y,1.0)/64.0;
+            float f = float(1.0); float s = float(0.4); float g = float(1.0);
+            float3 np = float3(1.0,1.0,1.0); float c = float (0.0);
+            int i=1;
+            for (int i=1; i<=375; i++)
+            {
+                if (f>s)
+                {
+                    np = o+d*c;
+                    f=1.0;
+                    f*=distance(np,float3(cos(time)+sin(time*0.2),0.3,2.0+cos(time*0.5)*0.5));
+                    f*=distance(np,float3(-cos(time*0.7),0.3,2.0+sin(time*0.5)));
+                    f*=distance(np,float3(-sin(time*0.2)*0.5,sin(time),2.0));
+                    f*=cos(np.y)*cos(np.x)-0.1-cos(np.z*7.0+time*7.0)*cos(np.x*3.0)*cos(np.y*4.0)*0.1;
+                    c+=s*4.0;
+                }
+            }
+            float a=0.0;
+            float color = 0.0;
+            //repeat(loop,375,i);
+            float3 ds = o+d*c;
+            np = float3(ds.x,ds.y,ds.z);
+            f=1.0;
+            f=1.0*distance(np,float3(cos(time)+sin(time*0.2),0.3,2.0+cos(time*0.5)*0.5));
+            f*=distance(np,float3(-cos(time*0.7),0.3,2.0+sin(time*0.5)));
+            f*=distance(np,float3(-sin(time*0.2)*0.5,sin(time),2.0));
+            f*=cos(np.y)*cos(np.x)-0.1-cos(np.z*7.0+time*7.0)*cos(np.x*3.0)*cos(np.y*4.0)*0.1;
+            float objd = f;
+            
+            float3 pp = float3(1.0,1.0,1.0);
+            pp = float3(ds.x+0.01,ds.y,ds.z);
+            f=1.0*distance(np,float3(cos(time)+sin(time*0.2),0.3,2.0+cos(time*0.5)*0.5));
+            f*=distance(np,float3(-cos(time*0.7),0.3,2.0+sin(time*0.5)));
+            f*=distance(np,float3(-sin(time*0.2)*0.5,sin(time),2.0));
+            f*=cos(np.y)*cos(np.x)-0.1-cos(np.z*7.0+time*7.0)*cos(np.x*3.0)*cos(pp.y*4.0)*0.1;
+            pp.x = objd-f;
+            
+            pp = float3(ds.x,ds.y+0.01,ds.z);
+            f=1.0*distance(np,float3(cos(time)+sin(time*0.2),0.3,2.0+cos(time*0.5)*0.5));
+            f*=distance(np,float3(-cos(time*0.7),0.3,2.0+sin(time*0.5)));
+            f*=distance(np,float3(-sin(time*0.2)*0.5,sin(time),2.0));
+            f*=cos(np.y)*cos(np.x)-0.1-cos(np.z*7.0+time*7.0)*cos(np.x*3.0)*cos(np.y*4.0)*0.1;
+            pp.y = objd-f;
+            
+            pp = float3(ds.x,ds.y+0.01,ds.z);
+            f=1.0*distance(np,float3(cos(time)+sin(time*0.2),0.3,2.0+cos(time*0.5)*0.5));
+            f*=distance(np,float3(-cos(time*0.7),0.3,2.0+sin(time*0.5)));
+            f*=distance(np,float3(-sin(time*0.2)*0.5,sin(time),2.0));
+            f*=cos(np.y)*cos(np.x)-0.1-cos(np.z*7.0+time*7.0)*cos(np.x*3.0)*cos(np.y*4.0)*0.1;
+            pp.z = objd-f;
+            
+            float3 norm = float3(sqrt(pp.x*pp.x)+sqrt(pp.y*pp.y)+sqrt(pp.z*pp.z));
+            pp.x = pp.x/norm.x;
+            pp.y = pp.y/norm.y;
+            pp.z = pp.z/norm.z;
+            
+            color = max(-0.5*pp.z,0.0)+ max(-0.5*pp.y+0.5*pp.z,0.0)*0.25;
+            float3 rgb = float3(color+0.1*c*col.r, color+0.2*c*col.g, color+0.5*f*col.b);
+            rgb.x = max(0.0,min(1.0,rgb.x));
+            rgb.z = max(0.0,min(1.0,rgb.z));
+            dst.rgb = rgb;
+        }
+    }
+}

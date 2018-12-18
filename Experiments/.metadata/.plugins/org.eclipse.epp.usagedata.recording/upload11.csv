@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.specification.version,sysinfo,,,"1.7",1318239616842
+java.vendor,sysinfo,,,"Oracle Corporation",1318239616842
+java.version,sysinfo,,,"1.7.0",1318239616842
+java.vm.info,sysinfo,,,"mixed mode",1318239616842
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1318239616842
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1318239616842
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1318239616842
+java.vm.specification.version,sysinfo,,,"1.7",1318239616842
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1318239616842
+java.vm.version,sysinfo,,,"21.0-b17",1318239616842
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239619696
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239621169
+executed,command,org.eclipse.debug.ui,3.5.0.v20090603,"org.eclipse.debug.ui.commands.OpenRunConfigurations",1318239621183
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239635556
+started,bundle,org.eclipse.ant.ui,3.4.0.v20090520,"org.eclipse.ant.ui",1318239637998
+started,bundle,org.eclipse.datatools.connectivity,1.1.2.v200906020553,"org.eclipse.datatools.connectivity",1318239639045
+started,bundle,org.eclipse.datatools.connectivity.ui,1.1.4.v200906020553,"org.eclipse.datatools.connectivity.ui",1318239639048
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239648747
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239649828
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239656560
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239656940
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239658022
+closed,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1318239658084
+stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.406.v200903031852,"org.eclipse.jst.ws.axis.creation.ui",1318239658407
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.405.v200901261650,"org.eclipse.jst.ws.axis.consumption.ui",1318239658408

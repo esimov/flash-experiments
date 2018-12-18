@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"org.eclipse.ui.workbench",1318239616825
+started,bundle,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.workbench.texteditor",1318239616826
+started,bundle,org.eclipse.update.configurator,3.3.0.v20090312,"org.eclipse.update.configurator",1318239616827
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1318239616827
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1318239616828
+started,bundle,org.eclipse.wst.common.frameworks,1.1.300.v200904160730,"org.eclipse.wst.common.frameworks",1318239616829
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.0.v200906080535,"org.eclipse.wst.common.project.facet.core",1318239616829
+started,bundle,org.eclipse.wst.web,1.1.300.v200901261500,"org.eclipse.wst.web",1318239616829
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1318239616830
+started,bundle,com.powerflasher.fdt.core,3.5.0.1094,"com.powerflasher.fdt.core",1318239616837
+started,bundle,com.powerflasher.fdt.core.dom,3.5.0.1094,"com.powerflasher.fdt.core.dom",1318239616837
+started,bundle,com.powerflasher.fdt.core.mxml,3.5.0.1094,"com.powerflasher.fdt.core.mxml",1318239616838
+started,bundle,com.powerflasher.fdt.professional.ui,3.5.0.1094,"com.powerflasher.fdt.professional.ui",1318239616838
+started,bundle,com.powerflasher.fdt.ui,3.5.0.1094,"com.powerflasher.fdt.ui",1318239616838
+started,bundle,com.powerflasher.fdt.ui.launch,3.5.0.1094,"com.powerflasher.fdt.ui.launch",1318239616838
+started,bundle,com.powerflasher.fdt.ui.mxml,3.5.0.1094,"com.powerflasher.fdt.ui.mxml",1318239616839
+os,sysinfo,,,"win32",1318239616842
+arch,sysinfo,,,"x86",1318239616842
+ws,sysinfo,,,"win32",1318239616842
+locale,sysinfo,,,"en_US",1318239616842
+processors,sysinfo,,,"2",1318239616842
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1318239616842
+java.runtime.version,sysinfo,,,"1.7.0-b147",1318239616842
+java.specification.name,sysinfo,,,"Java Platform API Specification",1318239616842
+java.specification.vendor,sysinfo,,,"Oracle Corporation",1318239616842

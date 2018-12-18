@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="14" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" width="1024" x="69" y="69">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.powerflasher.fdt.ui.CodingActionSet" itemType="typeToolBarContribution" x="138" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.powerflasher.fdt.ui.editor.ASEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1318239319077" focus="true" label="Workspace - Flash FDT">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor activePart="true" focus="true" id="com.powerflasher.fdt.ui.editor.ASEditor" name="ClothTriangle.as" partName="ClothTriangle.as" path="C:/Users/simoe/Desktop/WEB Lab/_Flash Experiments/AS3 Advanced Animation/NIPhysics/src/ClothTriangle.as" title="ClothTriangle.as" tooltip="NIPhysics/src/ClothTriangle.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NIPhysics/src/ClothTriangle.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2978" selectionTopPixel="1734"/>
+</editor>
+</editors>
+<views>
+<view id="com.powerflasher.fdt.ui.views.FlashExplorer" partName="Flash Explorer">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
+<filters>
+<filter element="*.jsfl" isEnabled="false"/>
+<filter element="*.fla" isEnabled="false"/>
+<filter element="*.htm" isEnabled="false"/>
+<filter element="*.html" isEnabled="false"/>
+<filter element="*.index" isEnabled="false"/>
+<filter element="*.swf" isEnabled="false"/>
+<filter element="*.aso" isEnabled="false"/>
+<filter element="*CVS" isEnabled="false"/>
+<filter element="*.svn" isEnabled="false"/>
+<filter element="*_svn" isEnabled="false"/>
+<filter element="*.class" isEnabled="false"/>
+<filter element="RemoteSystemsConnections" isEnabled="true"/>
+<filter element="RemoteSystemsTempFiles" isEnabled="true"/>
+<filter element=".*" isEnabled="false"/>
+<filter element="*.class" isEnabled="false"/>
+</filters>
+<expanded>
+<element path="/NIPhysics"/>
+<element path="/NIPhysics/src"/>
+</expanded>
+<selection>
+<element path="/NIPhysics"/>
+</selection>
+</viewState>
+</view>
+<view id="com.powerflasher.fdt.ui.views.SWFView" partName="SWF Viewer"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors (1 item)"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
+<view id="org.eclipse.ant.ui.views.AntView" partName="Ant"/>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="com.powerflasher.fdt.ui.views.JavaDocView" partName="Javadoc View"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.powerflasher.fdt.ui.editor.ASEditor" activePerspective="com.powerflasher.fdt.ui.Perspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.powerflasher.fdt.internal.ui.perspective.FlashPerspectiveFactory" id="com.powerflasher.fdt.ui.Perspective" label="Flash FDT"/>
+<alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<show_view_action id="com.powerflasher.fdt.ui.views.FlashExplorer"/>
+<show_view_action id="com.powerflasher.fdt.ui.views.SWFView"/>
+<show_view_action id="com.powerflasher.fdt.ui.views.JavaDocView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewMxmlClassWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewAS2ClassWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewAS2InterfaceWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewVariableWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewFunctionWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewNamespaceWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewFlaWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewAS2PackageWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewAS2SourcefolderWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewPathVariableLibraryWizard"/>
+<new_wizard_action id="com.powerflasher.fdt.ui.wizards.NewASProjectWizard"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspectiv"/>
+<perspective_action id="org.eclipse.team.cvs.ui.cvsPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.powerflasher.fdt.ui.views.FlashExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ant.ui.views.AntView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.powerflasher.fdt.ui.views.SWFView"/>
+<view id="com.powerflasher.fdt.ui.views.JavaDocView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="com.powerflasher.fdt.ui.views.FlashExplorer" appearance="2" expanded="2">
+<page content="com.powerflasher.fdt.ui.views.FlashExplorer" label="Flash Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@10143a7" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.26" ratioLeft="260" ratioRight="740" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.69953775" ratioLeft="454" ratioRight="195" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.powerflasher.fdt.ui.views.SWFView" label="SWF Viewer"/>
+<page content="com.powerflasher.fdt.ui.views.JavaDocView" label="Javadoc View"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info part="com.powerflasher.fdt.ui.swcoutline.SWCOutline" ratio="0.5" ratioLeft="370" ratioRight="370" relationship="2" relative="bottomRight"/>
+<info folder="true" part="bottomLeft" ratio="0.49922958" ratioLeft="324" ratioRight="325" relationship="4" relative="topLeft">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="Ant"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/C:/Users/simoe/Desktop/WEB%20Lab/_Flash%20Experiments/AS3%20Advanced%20Animation/NIPhysics"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.powerflasher.fdt.ui.editor.ASEditor" path="/NIPhysics/src/FreeFloatingTest.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.powerflasher.fdt.ui.editor.ASEditor" path="/NIPhysics/src/ClothTriangle.as"/>
+</editors>
+<item historyLabel="NIPhysics" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FreeFloatingTest.as" index="1">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="ClothTriangle.as" index="2">
+<position info="not_deleted" x="442" y="0"/>
+</item>
+<item active="true" historyLabel="ClothTriangle.as" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.powerflasher.fdt.ui.editor.ASEditor" name="ClothTriangle.as" tooltip="NIPhysics/src/ClothTriangle.as">
+<persistable path="/NIPhysics/src/ClothTriangle.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.powerflasher.fdt.ui.editor.ASEditor" name="FreeFloatingTest.as" tooltip="NIPhysics/src/FreeFloatingTest.as">
+<persistable path="/NIPhysics/src/FreeFloatingTest.as"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="NIPhysics" tooltip="C:\Users\simoe\Desktop\WEB Lab\_Flash Experiments\AS3 Advanced Animation\NIPhysics">
+<persistable uri="file:/C:/Users/simoe/Desktop/WEB%20Lab/_Flash%20Experiments/AS3%20Advanced%20Animation/NIPhysics"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name=".actionScriptProperties" tooltip="C:\Users\simoe\Desktop\WEB Lab\_Flash Experiments\Wonderfl\1k-tunnel+Sound\.actionScriptProperties">
+<persistable uri="file:/C:/Users/simoe/Desktop/WEB%20Lab/_Flash%20Experiments/Wonderfl/1k-tunnel+Sound/.actionScriptProperties"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name=".project" tooltip="C:\Users\simoe\Desktop\WEB Lab\_Flash Experiments\Wonderfl\1k-tunnel+Sound\.project">
+<persistable uri="file:/C:/Users/simoe/Desktop/WEB%20Lab/_Flash%20Experiments/Wonderfl/1k-tunnel+Sound/.project"/>
+</file>
+</mruList>
+</workbench>

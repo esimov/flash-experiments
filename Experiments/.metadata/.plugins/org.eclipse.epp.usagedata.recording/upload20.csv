@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1094,"com.powerflasher.fdt.ui.editor.ASEditor",1319527517364
+started,bundle,com.powerflasher.fdt.core.launch,3.5.0.1094,"com.powerflasher.fdt.core.launch",1319527517367
+activated,view,com.powerflasher.fdt.ui,3.5.0.1094,"com.powerflasher.fdt.ui.views.FlashExplorer",1319527518643
+error,log,,,"FDT log: No message gotten.",1319527518831
+opened,editor,com.powerflasher.fdt.ui,3.5.0.1094,"com.powerflasher.fdt.ui.editor.ASEditor",1319527518888
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1094,"com.powerflasher.fdt.ui.editor.ASEditor",1319527518948
+error,log,,,"FDT log: No message gotten.",1319527520339
+error,log,,,"Unhandled event loop exception",1319527520340
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1319527530100
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1319527532137
+executed,command,org.eclipse.debug.ui,3.5.0.v20090603,"org.eclipse.debug.ui.commands.OpenRunConfigurations",1319527532151
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1319527534512
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1319527538365
+executed,command,org.eclipse.debug.ui,3.5.0.v20090603,"org.eclipse.debug.ui.commands.OpenRunConfigurations",1319527538382
+activated,view,com.powerflasher.fdt.ui,3.5.0.1094,"com.powerflasher.fdt.ui.views.FlashExplorer",1319527539120
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1319527539754
+error,log,,,"FDT log: No message gotten.",1319527547291
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1319527547303
+started,bundle,com.powerflasher.fdt.shippedflex,3.3.0.4852_1001,"com.powerflasher.fdt.shippedflex",1319527549751
+started,bundle,org.eclipse.wst.common.emf,1.1.300.v200905060430,"org.eclipse.wst.common.emf",1319527551145
+started,bundle,org.eclipse.jst.j2ee.core,1.1.300.v200905060430,"org.eclipse.jst.j2ee.core",1319527551166
+started,bundle,org.eclipse.jem,2.0.300.v200901272200,"org.eclipse.jem",1319527551224
+started,bundle,org.eclipse.emf.ecore.xmi,2.5.0.v200906151043,"org.eclipse.emf.ecore.xmi",1319527551248
+started,bundle,org.eclipse.jst.jee,1.0.200.v200905290632,"org.eclipse.jst.jee",1319527551577
+started,bundle,org.eclipse.wst.common.frameworks.ui,1.1.300.v200904160730,"org.eclipse.wst.common.frameworks.ui",1319527551652

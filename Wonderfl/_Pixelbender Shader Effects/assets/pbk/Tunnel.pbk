@@ -1,0 +1,66 @@
+<languageVersion : 1.0;>
+
+kernel Plasma
+<   namespace : "Simo Endre";
+    vendor : "simoendre.wordpress.com";
+    version : 1;
+    description : "Tunnel effect with texture deformation";
+>
+
+{
+    input image4 src;
+    output pixel4 dst;
+    
+    parameter float2 resolution
+    <
+        minValue : float2 (460.0, 460.0);
+        defaultValue : float2 (800.0, 800.0);
+        maxValue : float2 (1024.0, 1024.0);
+    >;
+    
+    parameter float deform
+    <
+        minValue : float (0.01);
+        defaultValue : float (0.08);
+        maxValue : float (0.15);
+    >;
+    
+    parameter float2 center
+    <
+        minValue : float2 (230.0, 230.0);
+        defaultValue : float2 (400.0, 400.0);
+        maxValue : float2 (512.0, 512.0);
+    >;
+    
+    parameter float time
+    <
+        minValue : float (0.0);
+        maxValue : float (1000.0);
+    >;
+
+    void evaluatePixel()
+    {
+        //get the coordinate for every pixel
+        float2 p = 1.5*(outCoord()-center)/resolution;
+        
+        //apply the tunnel effect
+        float2 uv;
+        float r = pow( pow(p.x*p.x,12.0) + pow(p.y*p.y,12.0), 1.0/10.0 );
+        uv.x = .75*time+.1/r;
+        uv.y = atan(p.y,p.x)/3.1416;
+        
+        //calculate some random plasma effect movement
+        //deform the plasma by applying the tunnel effect
+        float mov0 = p.x+p.y+cos(sin(time)*2.)*100.+sin(uv.x/100.)*100.;
+        float mov1 = uv.x + cos(sin(time)*0.2)/100.0;
+        float mov2 = p.y + sin(mov1)/200.;
+        float mov3 = uv.y*(uv.x+(sin(time)*0.2))*deform + sin(cos(time))*0.2/200.;
+        
+        //combine the plasma and tunnel effect and calculate the colors for the three base channel
+        float c1 = abs(sin(mov1+time)/2.+mov2/2.+mov1+mov2+time);
+        float c2 = abs(sin(c1+sin(mov0/100.+time)+sin(p.y/40.+time)+sin((p.x+p.y)/100.)*3.));
+        float c3 = abs(sin(c2+cos(mov1+mov2)+cos(mov2+mov3)))+sin(p.y/100.+time);
+        
+        dst = pixel4(c1,c2,c3,1.0);
+    }
+}

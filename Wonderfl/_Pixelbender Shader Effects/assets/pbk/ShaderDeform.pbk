@@ -1,0 +1,59 @@
+<languageVersion : 1.0;>
+
+kernel ShaderDeform
+<   namespace : "Simo Endre";
+    vendor : "esimov";
+    version : 1;
+>
+{
+    input image4 src;
+    output pixel4 dst;
+    
+    parameter float2 center
+    <
+        minValue : float2(0.0, 0.0);
+        defaultValue : float2(300.0, 300.0);
+        maxValue : float2(600.0, 600.0);
+    >;
+    
+    parameter float2 imgSize
+    <
+        minValue : float2(0.0, 0.0);
+        defaultValue : float2(600.0, 600.0);
+        maxValue : float2(600.0, 600.0);
+    >;
+    
+    parameter float2 offset;
+    
+    void
+    evaluatePixel ()
+    {
+        float pi = 3.14159265358979;
+        float2 pos = (outCoord() - center) / imgSize;
+        float r = sqrt(pow(pos.x,2.0) + pow(pos.y,2.0));
+        float a = atan(pos.y, pos.x);
+        
+        float u = 0.0;
+        float v = 0.0;
+        float w = 0.0;
+        
+        u += offset.x;
+        v += offset.y;
+        
+        //tweak here
+        u += 0.3 / (r + 0.5 * pos.x);
+        v += 3.0 * a / pi;
+        w += 0.5 + (2.0 / (10.0*r + 5.0*pos.x));
+        //tweak end
+        
+        if (u < 0.0) { u += imgSize.x * ceil(-u / imgSize.x); }
+        if (v < 0.0) { v += imgSize.y * ceil(-v / imgSize.y); }
+        if (u > imgSize.x) { u -= imgSize.x * floor(u / imgSize.x); }
+        if (v > imgSize.y) { v -= imgSize.y * floor(v / imgSize.y); }
+        
+        u *= offset.x;
+        v *= offset.y;
+        dst = sampleNearest(src, float2(u,v));
+        dst.rgb *= w;
+    }
+}
